@@ -1,5 +1,16 @@
-.back{
-  background-color: red;
-  height: 200px;
-  width: 200px;
+.baneer{
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid violet;
+  &__nav{
+    border: 2px solid firebrick;
+    &__list{
+      display: flex;
+      border: 2px solid sienna;
+      &__element{
+        list-style-type: none;
+        border: 2px solid black;
+      }
+    }
+  }
 }

@@ -1,7 +1,12 @@
-import styles from "@/styles/Home.module.scss";
+
+import Image from "next/image";
+import logo from "../images/logo.png"
+import Navbar from "../components/Navbar";
 
 const Home = () => {
-  return <div className={styles.back}><h1>Salut </h1></div>;
+  return (
+    <Navbar/>
+  );
 };
 
 export default Home;
