@@ -8,17 +8,41 @@
     width: 30%;
     display: flex;
     justify-content: space-evenly;
+   
     &__list {
       display: flex;
+      align-items: center;
       justify-content: space-between;
       width: 100%;
-      &__element {
+      &__elt {
         display: inline;
+        position: relative;
+        width:50%;
         list-style-type: none;
         font-size: 24px;
         font-weight: 400;
         color: $salmon;
+        
       }
     }
+  }
+}
+.navLink {
+  text-decoration: none;
+}
+
+.clicked {
+  position: relative;
+  &::after {
+    content: "";
+    width: 70px;
+    left: 14px;
+    height: 3px;
+    bottom: 2%;
+    background-color: $seaPin;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0%;
+
   }
 }
