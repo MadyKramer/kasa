@@ -4,12 +4,12 @@ import logo from "../images/logo.png";
 import Link from "next/link";
 import { useState } from "react";
 
-const Navbar = () => {
+export default function Navbar() {
   const [isActive, setIsActive] = useState("accueil");
 
   const handleClick = (e, link) => {
     setIsActive(link);
-    console.log(link);
+  
   };
   return (
     <header>
@@ -23,10 +23,10 @@ const Navbar = () => {
         />
         <nav className={styles.baneer__nav}>
           <ul className={styles.baneer__nav__list}>
-            <Link href="#" className={styles.navLink}>
+            <Link href="/" className={styles.navLink}>
               <li className={styles.baneer__nav__list__elt}>Accueil</li>
             </Link>
-            <Link href="#" className={styles.navLink}>
+            <Link href="/apropos" className={styles.navLink}>
               <li className={styles.baneer__nav__list__elt}>A propos</li>
             </Link>
           </ul>
@@ -34,6 +34,4 @@ const Navbar = () => {
       </div>
     </header>
   );
-};
-
-export default Navbar;
+}
